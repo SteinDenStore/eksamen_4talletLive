@@ -1,12 +1,18 @@
-@import 'tailwindcss';
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+@import "tailwindcss";
 
 @plugin '@tailwindcss/typography';
 @plugin '@tailwindcss/forms';
 @import "tailwindcss-animated";
 @import "tailwindcss-intersect";
+@plugin "daisyui";
 
 @theme {
   /* Her tilføjes theme variable // tokens */
+  --font-montserrat: "Montserrat", sans-serif;
+  --font-display: "Montserrat", sans-serif;
+  --font-display-weight: 600;
 }
 
 @layer base {
@@ -19,9 +25,7 @@
   }
 }
 
-@layer components{
-
+@layer components {
 }
-@layer utilities{
-  
+@layer utilities {
 }
