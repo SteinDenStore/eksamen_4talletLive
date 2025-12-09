@@ -22,3 +22,11 @@ pnpm-debug.log*
 
 # jetbrains setting folder
 .idea/
+
+# Ignore all image files
+.jpg
+.jpeg
+.png
+.gif
+.bmp
+.svg
