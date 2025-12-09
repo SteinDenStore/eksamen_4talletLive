@@ -1,15 +1,83 @@
 ---
 import MainLayout from "../layouts/MainLayout.astro";
-import Button from '../components/Button.astro';
-import Link from '../components/Link.astro';
-import { Image } from 'astro:assets';
+import Button from "../components/Button.astro";
+import Link from "../components/Link.astro";
+import { Image } from "astro:assets";
 import thumbsup from "../assets/images/thumbsup.png";
+import logo from "../assets/images/4tallet_logo.png";
 ---
-<MainLayout title="Titel">
-	<article>
-		<h1>Index overskrift</h1>
-		<Button>Klik!</Button>
-		<p>Link til <Link href="https://www.kea.dk" target="_blank">En anden side</Link></p>
-		<Image src={thumbsup} alt=""></Image>
-	</article>
+
+<MainLayout title="Frontpage">
+  <section>
+    <div class="flex justify-center mb-20 mt-20">
+      <span class="text-fuchsia-600 font-display font-bold text-5xl">
+        WELCOME TO 4TALLET
+        <span class="text-rotate">
+          <span>
+            <span class="text-fuchsia-600 font-display font-bold text-5xl"
+              >LIVE</span
+            >
+            <span class="text-white font-display font-bold text-5xl">LIVE</span>
+            <span class="text-amber-500 font-display font-bold text-5xl"
+              >LIVE</span
+            >
+          </span>
+        </span>
+      </span>
+    </div>
+    <div class="flex justify-center">
+      <!-- Kort 1 -->
+      <div class="hover-3d">
+        <!-- content -->
+        <figure class="max-w-100">
+          <Image class="rounded-lg" src={logo} alt="logo" />
+        </figure>
+        <!-- 8 empty divs needed for the 3D effect -->
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+  </section>
+  <section>
+    <h1 class="text-3xl font-semibold text-center mx-auto">
+      Explore the Library
+    </h1>
+
+    <p class="text-sm text-slate-500 text-center mt-2 max-w-lg mx-auto">
+      A visual collection of our most recent works - each piece crafted with
+      intention, emotion, and style.
+    </p>
+
+    <div class="flex flex-wrap items-center justify-center mt-10 mx-auto gap-4">
+      <img
+        class="max-w-56 h-80 object-cover rounded-lg hover:-translate-y-1 transition-all duration-300"
+        src="https://images.unsplash.com/photo-1562619371-b67725b6fde2?q=80&w=600&h=900&auto=format&fit=crop"
+        alt="image"
+      />
+
+      <img
+        class="max-w-56 h-80 object-cover rounded-lg hover:-translate-y-1 transition-all duration-300"
+        src="https://images.unsplash.com/photo-1633983482450-bfb7b566fe6a?q=80&w=600&h=900&auto=format&fit=crop"
+        alt="image"
+      />
+
+      <img
+        class="max-w-56 h-80 object-cover rounded-lg hover:-translate-y-1 transition-all duration-300"
+        src="https://plus.unsplash.com/premium_photo-1671209879721-3082e78307e3?q=80&w=600&h=900&auto=format&fit=crop"
+        alt="image"
+      />
+
+      <img
+        class="max-w-56 h-80 object-cover rounded-lg hover:-translate-y-1 transition-all duration-300"
+        src="https://images.unsplash.com/photo-1563089145-599997674d42?q=80&w=600&h=900&auto=format&fit=crop"
+        alt="image"
+      />
+    </div>
+  </section>
 </MainLayout>
