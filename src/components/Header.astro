@@ -1,5 +1,29 @@
 ---
+import logo from "../assets/images/4tallet_logo.png";
+import { Image } from "astro:assets";
+import MainLayout from "../layouts/MainLayout.astro";
 ---
-<div>
-Header - tilføj navigation mm.
+
+<div class="navbar bg-zinc-950 shadow-sm px-10 mb-15">
+  <div class="flex-1">
+    <a href="/"
+      ><Image class="w-full max-w-20 mt-3 mb-3" src={logo} alt="logo" /></a
+    >
+  </div>
+  <div class="flex-none">
+    <ul class="menu menu-horizontal px-1 font-display">
+      <li><a>EVENTS</a></li>
+      <li><a>FRONTPAGE</a></li>
+      <li><a href="galleri">GALLERY</a></li>
+      <li>
+        <details>
+          <summary>PARENTS</summary>
+          <ul class="bg-zinc-950 rounded-t-none p-2">
+            <li><a>TBD</a></li>
+            <li><a>TBD</a></li>
+          </ul>
+        </details>
+      </li>
+    </ul>
+  </div>
 </div>
