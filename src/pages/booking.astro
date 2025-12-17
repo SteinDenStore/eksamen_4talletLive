@@ -8,11 +8,307 @@ import logo from "../assets/images/4tallet_logo.png";
 ---
 
 <MainLayout title="Story of 4Tallet Live">
+  <!-- Event booking -->
   <section class="px-10">
     <h2
-      class="bg-none flex justify-center text-3xl rounded-lg mb-15 p-10 py-20 border-double border-fuchsia-600 border-8 text-white font-display font-semibold"
+      class="bg-none flex justify-center text-center lg:text-3xl md:text-xl rounded-lg mb-5 p-10 py-20 border-double border-fuchsia-600 border-8 text-white font-display font-semibold mt-20"
     >
       HOSTING A EVENT? BOOK A TABLE NOW!
     </h2>
+
+    <section id="section2" class="py-20 bg-zinc-950 px-4 md:px-0 rounded-xl">
+      <div
+        class="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-center"
+      >
+        <!-- Form -->
+        <div>
+          <div
+            class="max-w-xl mx-auto p-6 bg-zinc-950 text-white rounded-lg shadow-md"
+          >
+            <h2 class="text-2xl mb-4 text-center font-display font-bold">
+              Book a Table
+            </h2>
+
+            <form class="space-y-4 font-display font-bold">
+              <!-- Name -->
+              <div>
+                <label for="name" class="block mb-1 font-semibold"
+                  >Full Name</label
+                >
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  placeholder="Your Name"
+                  required
+                  class="w-full px-3 py-2 rounded bg-zinc-800 border border-fuchsia-600 focus:outline-none focus:ring-2 focus:ring-orange-500"
+                />
+              </div>
+
+              <!-- Email -->
+              <div>
+                <label for="email" class="block mb-1 font-semibold">Email</label
+                >
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="you@example.com"
+                  required
+                  class="w-full px-3 py-2 rounded bg-zinc-800 border border-fuchsia-600 focus:outline-none focus:ring-2 focus:ring-orange-500"
+                />
+              </div>
+
+              <!-- Phone -->
+              <div>
+                <label for="phone" class="block mb-1 font-semibold"
+                  >Phone Number</label
+                >
+                <input
+                  type="tel"
+                  id="phone"
+                  name="phone"
+                  placeholder="123-456-7890"
+                  required
+                  class="w-full px-3 py-2 rounded bg-zinc-800 border border-fuchsia-600 focus:outline-none focus:ring-2 focus:ring-orange-500"
+                />
+              </div>
+
+              <!-- Date & Time -->
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div>
+                  <label for="date" class="block mb-1 font-semibold">Date</label
+                  >
+                  <input
+                    type="date"
+                    id="date"
+                    name="date"
+                    required
+                    class="w-full px-3 py-2 rounded bg-zinc-800 border border-fuchsia-600 focus:outline-none focus:ring-2 focus:ring-orange-500"
+                  />
+                </div>
+
+                <div>
+                  <label for="time" class="block mb-1 font-semibold">Time</label
+                  >
+                  <input
+                    type="time"
+                    id="time"
+                    name="time"
+                    required
+                    class="w-full px-3 py-2 rounded bg-zinc-800 border border-fuchsia-600 focus:outline-none focus:ring-2 focus:ring-orange-500"
+                  />
+                </div>
+              </div>
+
+              <!-- Guests -->
+              <div>
+                <label for="guests" class="block mb-1 font-semibold"
+                  >Number of Guests</label
+                >
+                <select
+                  id="guests"
+                  name="guests"
+                  required
+                  class="w-full px-3 py-2 rounded bg-zinc-800 border border-fuchsia-600 focus:outline-none focus:ring-2 focus:ring-orange-500"
+                >
+                  <option value="" disabled selected
+                    >Select number of guests</option
+                  >
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5+</option>
+                </select>
+              </div>
+
+              <!-- Special Requests -->
+              <div>
+                <label for="requests" class="block mb-1 font-semibold"
+                  >Special Requests (Optional)</label
+                >
+                <textarea
+                  id="requests"
+                  name="requests"
+                  rows="3"
+                  placeholder="Any special requests?"
+                  class="w-full px-3 py-2 rounded bg-zinc-800 border border-fuchsia-600 focus:outline-none focus:ring-2 focus:ring-orange-500"
+                ></textarea>
+              </div>
+
+              <!-- Submit -->
+              <button
+                type="submit"
+                class="w-full bg-fuchsia-600 hover:bg-fuchsia-400 text-white font-semibold py-2 px-4 rounded transition-colors"
+              >
+                Book Table
+              </button>
+            </form>
+          </div>
+        </div>
+
+        <!-- Image -->
+        <div class="flex justify-center md:justify-start">
+          <img
+            class="rounded-2xl border-double border-2 border-fuchsia-600 max-w-full h-auto object-cover"
+            src="/booking/table.webp"
+            alt="picture of empty table"
+          />
+        </div>
+      </div>
+    </section>
+  </section>
+
+  <!-- quiz booking -->
+  <section class="px-10">
+    <h2
+      class="bg-none flex justify-center text-center lg:text-3xl md:text-xl rounded-lg mb-5 p-10 py-20 border-double border-fuchsia-600 border-8 text-white font-display font-semibold mt-20"
+    >
+      TABLE BOOKING FOR QUIZ NIGHT
+    </h2>
+
+    <section id="section2" class="py-20 bg-zinc-950 px-4 md:px-0 rounded-xl">
+      <div
+        class="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-center"
+      >
+        <!-- Form -->
+        <div>
+          <div
+            class="max-w-xl mx-auto p-6 bg-zinc-950 text-white rounded-lg shadow-md"
+          >
+            <h2 class="text-2xl mb-4 text-center font-display font-bold">
+              Book a Table
+            </h2>
+
+            <form class="space-y-4 font-display font-bold">
+              <!-- Name -->
+              <div>
+                <label for="name" class="block mb-1 font-semibold"
+                  >Full Name</label
+                >
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  placeholder="Your Name"
+                  required
+                  class="w-full px-3 py-2 rounded bg-zinc-800 border border-fuchsia-600 focus:outline-none focus:ring-2 focus:ring-orange-500"
+                />
+              </div>
+
+              <!-- Email -->
+              <div>
+                <label for="email" class="block mb-1 font-semibold">Email</label
+                >
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="you@example.com"
+                  required
+                  class="w-full px-3 py-2 rounded bg-zinc-800 border border-fuchsia-600 focus:outline-none focus:ring-2 focus:ring-orange-500"
+                />
+              </div>
+
+              <!-- Phone -->
+              <div>
+                <label for="phone" class="block mb-1 font-semibold"
+                  >Phone Number</label
+                >
+                <input
+                  type="tel"
+                  id="phone"
+                  name="phone"
+                  placeholder="123-456-7890"
+                  required
+                  class="w-full px-3 py-2 rounded bg-zinc-800 border border-fuchsia-600 focus:outline-none focus:ring-2 focus:ring-orange-500"
+                />
+              </div>
+
+              <!-- Date & Time -->
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div>
+                  <label for="date" class="block mb-1 font-semibold">Date</label
+                  >
+                  <input
+                    type="date"
+                    id="date"
+                    name="date"
+                    required
+                    class="w-full px-3 py-2 rounded bg-zinc-800 border border-fuchsia-600 focus:outline-none focus:ring-2 focus:ring-orange-500"
+                  />
+                </div>
+
+                <div>
+                  <label for="time" class="block mb-1 font-semibold">Time</label
+                  >
+                  <input
+                    type="time"
+                    id="time"
+                    name="time"
+                    required
+                    class="w-full px-3 py-2 rounded bg-zinc-800 border border-fuchsia-600 focus:outline-none focus:ring-2 focus:ring-orange-500"
+                  />
+                </div>
+              </div>
+
+              <!-- Guests -->
+              <div>
+                <label for="guests" class="block mb-1 font-semibold"
+                  >Number of Guests</label
+                >
+                <select
+                  id="guests"
+                  name="guests"
+                  required
+                  class="w-full px-3 py-2 rounded bg-zinc-800 border border-fuchsia-600 focus:outline-none focus:ring-2 focus:ring-orange-500"
+                >
+                  <option value="" disabled selected
+                    >Select number of guests</option
+                  >
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5+</option>
+                </select>
+              </div>
+
+              <!-- Special Requests -->
+              <div>
+                <label for="requests" class="block mb-1 font-semibold"
+                  >Special Requests (Optional)</label
+                >
+                <textarea
+                  id="requests"
+                  name="requests"
+                  rows="3"
+                  placeholder="Any special requests?"
+                  class="w-full px-3 py-2 rounded bg-zinc-800 border border-fuchsia-600 focus:outline-none focus:ring-2 focus:ring-orange-500"
+                ></textarea>
+              </div>
+
+              <!-- Submit -->
+              <button
+                type="submit"
+                class="w-full bg-fuchsia-600 hover:bg-fuchsia-400 text-white font-semibold py-2 px-4 rounded transition-colors"
+              >
+                Book Table
+              </button>
+            </form>
+          </div>
+        </div>
+
+        <!-- Image -->
+        <div class="flex justify-center md:justify-start">
+          <img
+            class="rounded-2xl border-double border-2 border-fuchsia-600 max-w-full h-auto object-cover"
+            src="/booking/table.webp"
+            alt="picture of empty table"
+          />
+        </div>
+      </div>
+    </section>
   </section>
 </MainLayout>
