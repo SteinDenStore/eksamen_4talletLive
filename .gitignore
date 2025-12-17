@@ -28,7 +28,6 @@ pnpm-debug.log*
 *.jpeg
 *.png
 *.gif
-*.webp
 *.svg
 *.bmp
 *.tiff
