@@ -8,18 +8,21 @@ import thumbsup from "../assets/images/thumbsup.png";
 
 <MainLayout title="Gallery">
   <body>
-    <div class="flex justify-center mb-40 mt-20">
-      <span class="font-display font-bold text-5xl text-white">
+    <div class="flex justify-center lg:mb-40 mb-20 lg:mt-20 mt-30">
+      <span class="font-display font-bold lg:text-5xl md:text-2xl text-white">
         WELCOME TO THE GALLERY OF
         <span class="text-rotate">
           <span>
-            <span class="text-fuchsia-600 font-display font-bold text-5xl"
+            <span
+              class="text-fuchsia-600 font-display font-bold lg:text-5xl md:text-2xl"
               >MEMORIES</span
             >
-            <span class="text-fuchsia-600 font-display font-bold text-5xl"
+            <span
+              class="text-fuchsia-600 font-display font-bold lg:text-5xl md:text-2xl"
               >LIVE JAMS</span
             >
-            <span class="text-fuchsia-600 font-display font-bold text-5xl"
+            <span
+              class="text-fuchsia-600 font-display font-bold lg:text-5xl md:text-2xl"
               >AND FUN</span
             >
           </span>
@@ -28,262 +31,272 @@ import thumbsup from "../assets/images/thumbsup.png";
     </div>
     <section class="px-10">
       <h2
-        class="bg-none flex justify-center text-3xl rounded-lg mb-15 p-10 py-20 border-double border-fuchsia-600 border-8 text-white font-display font-semibold"
+        class="bg-none flex justify-center text-center lg:text-3xl md:text-xl rounded-lg mb-15 p-10 py-20 border-double border-fuchsia-600 border-8 text-white font-display font-semibold"
       >
         FEEL THE VIBE AT 4TALLET LIVES JAMS
       </h2>
     </section>
-    <!-- 
-    <section class="px-10 grid grid-cols-3 gap-4 mb-15">
-      <Image class="rounded-lg" src={saxGuy} alt="" />
-      <Image class="rounded-lg" src={sing1} alt="" />
-      <Image class="rounded-lg" src={sing2} alt="" />
-      <Image class="rounded-lg" src={sing3} alt="" />
-      <Image class="rounded-lg" src={bass1} alt="" />
-      <Image class="rounded-lg" src={band1} alt="" />
-      <Image class="rounded-lg" src={saxGuy} alt="" />
-      <Image class="rounded-lg" src={saxGuy} alt="" />
-      <Image class="rounded-lg" src={saxGuy} alt="" />
-    </section>
-    -->
-  </body>
-  <!-- 3D Kort section -->
-  <section
-    class="px-10 grid grid-cols-3 gap-4 justify-items-center mb-13 mt-13"
-  >
-    <!-- Kort 1 -->
-    <div class="hover-3d">
-      <!-- content -->
-      <figure
-        class="max-w-100 rounded-2xl border-double border-2 border-fuchsia-600"
-      >
-        <img src="/public/img/saxGuy.JPG" alt="Guy playing saxophone" />
-      </figure>
-      <!-- 8 empty divs needed for the 3D effect -->
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-    </div>
-    <!-- Kort 2 -->
-    <div class="hover-3d">
-      <!-- content -->
-      <figure
-        class="max-w-100 rounded-2xl border-double border-2 border-fuchsia-600"
-      >
-        <img src="/public/img/sing_1.JPG" alt="Guy playing saxophone" />
-      </figure>
-      <!-- 8 empty divs needed for the 3D effect -->
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-    </div>
-    <!-- Kort 3 -->
-    <div class="hover-3d">
-      <!-- content -->
-      <figure
-        class="max-w-100 rounded-2xl border-double border-2 border-fuchsia-600"
-      >
-        <img src="/public/img/sing_2.JPG" alt="Guy playing saxophone" />
-      </figure>
-      <!-- 8 empty divs needed for the 3D effect -->
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-    </div>
-  </section>
-  <!-- Række 2 -->
-  <section class="px-10 grid grid-cols-3 gap-4 justify-items-center mb-15">
-    <!-- Kort 4 -->
-    <div class="hover-3d">
-      <!-- content -->
-      <figure
-        class="max-w-100 rounded-2xl border-double border-2 border-fuchsia-600"
-      >
-        <img src="/public/img/sing_3.JPG" alt="Guy playing saxophone" />
-      </figure>
-      <!-- 8 empty divs needed for the 3D effect -->
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-    </div>
-    <!-- Kort 5 -->
-    <div class="hover-3d">
-      <!-- content -->
-      <figure
-        class="max-w-100 rounded-2xl border-double border-2 border-fuchsia-600"
-      >
-        <img src="/public/img/bass_1.JPG" alt="Guy playing saxophone" />
-      </figure>
-      <!-- 8 empty divs needed for the 3D effect -->
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-    </div>
-    <!-- Kort 6 -->
-    <div class="hover-3d">
-      <!-- content -->
-      <figure
-        class="max-w-100 rounded-2xl border-double border-2 border-fuchsia-600"
-      >
-        <img src="/public/img/band_1.JPG" alt="Guy playing saxophone" />
-      </figure>
-      <!-- 8 empty divs needed for the 3D effect -->
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-    </div>
-  </section>
-  <section class="px-10">
-    <h2
-      class="bg-none flex justify-center text-3xl rounded-lg mb-15 p-10 py-20 border-double border-fuchsia-600 border-8 text-white font-display font-semibold"
+    <!-- 3D Kort section -->
+    <section
+      class="px-10 grid lg:grid-cols-3 gap-4 justify-items-center lg:mb-13 mb-4 mt-13"
     >
-      TRUST US DONT MISS QUIZ NIGHTS
-    </h2>
-  </section>
-  <!-- 3D Kort section -->
-  <section
-    class="px-10 grid grid-cols-3 gap-4 justify-items-center mb-13 mt-13"
-  >
-    <!-- Kort 1 -->
-    <div class="hover-3d">
-      <!-- content -->
-      <figure
-        class="max-w-100 rounded-2xl border-double border-2 border-fuchsia-600"
+      <!-- Kort 1 -->
+      <div class="hover-3d">
+        <!-- content -->
+        <figure
+          class="max-w-100 rounded-2xl border-double border-2 border-fuchsia-600"
+        >
+          <img src="/galleri/saxGuy.webp" alt="guy playing saxophone" />
+        </figure>
+        <!-- 8 empty divs needed for the 3D effect -->
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      <!-- Kort 2 -->
+      <div class="hover-3d">
+        <!-- content -->
+        <figure
+          class="max-w-100 rounded-2xl border-double border-2 border-fuchsia-600"
+        >
+          <img src="/galleri/band_1.webp" alt="band performing" />
+        </figure>
+        <!-- 8 empty divs needed for the 3D effect -->
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      <!-- Kort 3 -->
+      <div class="hover-3d">
+        <!-- content -->
+        <figure
+          class="max-w-100 rounded-2xl border-double border-2 border-fuchsia-600"
+        >
+          <img src="/galleri/bass_1.webp" alt="bass player playing bass" />
+        </figure>
+        <!-- 8 empty divs needed for the 3D effect -->
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </section>
+    <!-- Række 2 -->
+    <section class="px-10 grid lg:grid-cols-3 gap-4 justify-items-center mb-15">
+      <!-- Kort 4 -->
+      <div class="hover-3d">
+        <!-- content -->
+        <figure
+          class="max-w-100 rounded-2xl border-double border-2 border-fuchsia-600"
+        >
+          <img src="/galleri/sing_1.webp" alt="band playing with lead singer" />
+        </figure>
+        <!-- 8 empty divs needed for the 3D effect -->
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      <!-- Kort 5 -->
+      <div class="hover-3d">
+        <!-- content -->
+        <figure
+          class="max-w-100 rounded-2xl border-double border-2 border-fuchsia-600"
+        >
+          <img
+            src="/galleri/sing_2.webp"
+            alt="band playing with lead singer having fun"
+          />
+        </figure>
+        <!-- 8 empty divs needed for the 3D effect -->
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      <!-- Kort 6 -->
+      <div class="hover-3d">
+        <!-- content -->
+        <figure
+          class="max-w-100 rounded-2xl border-double border-2 border-fuchsia-600"
+        >
+          <img src="/galleri/sing_3.webp" alt="band playing with lead singer" />
+        </figure>
+        <!-- 8 empty divs needed for the 3D effect -->
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </section>
+    <section class="px-10">
+      <h2
+        class="bg-none flex justify-center text-center lg:text-3xl md:text-xl rounded-lg mb-15 p-10 py-20 border-double border-fuchsia-600 border-8 text-white font-display font-semibold"
       >
-        <img src="/public/img/quiz_1.JPG" alt="Guy playing saxophone" />
-      </figure>
-      <!-- 8 empty divs needed for the 3D effect -->
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-    </div>
-    <!-- Kort 2 -->
-    <div class="hover-3d">
-      <!-- content -->
-      <figure
-        class="max-w-100 rounded-2xl border-double border-2 border-fuchsia-600"
-      >
-        <img src="/public/img/quiz_2.JPG" alt="Guy playing saxophone" />
-      </figure>
-      <!-- 8 empty divs needed for the 3D effect -->
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-    </div>
-    <!-- Kort 3 -->
-    <div class="hover-3d">
-      <!-- content -->
-      <figure
-        class="max-w-100 rounded-2xl border-double border-2 border-fuchsia-600"
-      >
-        <img src="/public/img/quiz_3.JPG" alt="Guy playing saxophone" />
-      </figure>
-      <!-- 8 empty divs needed for the 3D effect -->
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-    </div>
-  </section>
-  <!-- Række 2 -->
-  <section class="px-10 grid grid-cols-3 gap-4 justify-items-center mb-15">
-    <!-- Kort 4 -->
-    <div class="hover-3d">
-      <!-- content -->
-      <figure
-        class="max-w-100 rounded-2xl border-double border-2 border-fuchsia-600"
-      >
-        <img src="/public/img/quiz_4.JPG" alt="Guy playing saxophone" />
-      </figure>
-      <!-- 8 empty divs needed for the 3D effect -->
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-    </div>
-    <!-- Kort 5 -->
-    <div class="hover-3d">
-      <!-- content -->
-      <figure
-        class="max-w-100 rounded-2xl border-double border-2 border-fuchsia-600"
-      >
-        <img src="/public/img/quiz_5.JPG" alt="Guy playing saxophone" />
-      </figure>
-      <!-- 8 empty divs needed for the 3D effect -->
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-    </div>
-    <!-- Kort 6 -->
-    <div class="hover-3d">
-      <!-- content -->
-      <figure
-        class="max-w-100 rounded-2xl border-double border-2 border-fuchsia-600"
-      >
-        <img src="/public/img/quiz_6.JPG" alt="Guy playing saxophone" />
-      </figure>
-      <!-- 8 empty divs needed for the 3D effect -->
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-    </div>
-  </section>
+        TRUST US DONT MISS QUIZ NIGHTS
+      </h2>
+    </section>
+    <!-- 3D Kort section -->
+    <section
+      class="px-10 grid lg:grid-cols-3 gap-4 justify-items-center lg:mb-13 mb-4 mt-13"
+    >
+      <!-- Kort 1 -->
+      <div class="hover-3d">
+        <!-- content -->
+        <figure
+          class="max-w-100 rounded-2xl border-double border-2 border-fuchsia-600"
+        >
+          <img
+            src="/galleri/quiz_1.webp"
+            alt="people having fun at the international quiz night"
+          />
+        </figure>
+        <!-- 8 empty divs needed for the 3D effect -->
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      <!-- Kort 2 -->
+      <div class="hover-3d">
+        <!-- content -->
+        <figure
+          class="max-w-100 rounded-2xl border-double border-2 border-fuchsia-600"
+        >
+          <img
+            src="/galleri/quiz_2.webp"
+            alt="people having fun at the international quiz night"
+          />
+        </figure>
+        <!-- 8 empty divs needed for the 3D effect -->
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      <!-- Kort 3 -->
+      <div class="hover-3d">
+        <!-- content -->
+        <figure
+          class="max-w-100 rounded-2xl border-double border-2 border-fuchsia-600"
+        >
+          <img
+            src="/galleri/quiz_3.webp"
+            alt="people having fun at the international quiz night"
+          />
+        </figure>
+        <!-- 8 empty divs needed for the 3D effect -->
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </section>
+    <!-- Række 2 -->
+    <section
+      class="px-10 grid lg:grid-cols-3 gap-4 justify-items-center lg:mb-13 mb-4"
+    >
+      <!-- Kort 4 -->
+      <div class="hover-3d">
+        <!-- content -->
+        <figure
+          class="max-w-100 rounded-2xl border-double border-2 border-fuchsia-600"
+        >
+          <img
+            src="/galleri/quiz_4.webp"
+            alt="bartender at the international quiz night"
+          />
+        </figure>
+        <!-- 8 empty divs needed for the 3D effect -->
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      <!-- Kort 5 -->
+      <div class="hover-3d">
+        <!-- content -->
+        <figure
+          class="max-w-100 rounded-2xl border-double border-2 border-fuchsia-600"
+        >
+          <img
+            src="/galleri/quiz_5.webp"
+            alt="people having fun at the international quiz night"
+          />
+        </figure>
+        <!-- 8 empty divs needed for the 3D effect -->
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      <!-- Kort 6 -->
+      <div class="hover-3d">
+        <!-- content -->
+        <figure
+          class="max-w-100 rounded-2xl border-double border-2 border-fuchsia-600"
+        >
+          <img
+            src="/galleri/quiz_6.webp"
+            alt="people having fun at the international quiz night"
+          />
+        </figure>
+        <!-- 8 empty divs needed for the 3D effect -->
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </section>
+  </body>
 </MainLayout>

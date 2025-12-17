@@ -1,0 +1,150 @@
+---
+import MainLayout from "../layouts/MainLayout.astro";
+import Button from "../components/Button.astro";
+import Link from "../components/Link.astro";
+import { Image } from "astro:assets";
+import thumbsup from "../assets/images/thumbsup.png";
+import logo from "../assets/images/4tallet_logo.png";
+---
+
+<MainLayout title="Story of 4Tallet Live">
+  <section id="section2" class="py-20 bg-zinc-950 px-4 md:px-0 rounded-xl">
+    <div
+      class="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-center fadein1"
+    >
+      <div>
+        <h2 class="text-4xl font-bold mb-4 text-center md:text-left">
+          The History of 4Tallet Live
+        </h2>
+        <p class="text-xl text-center md:text-left">How it all started</p>
+        <p class="mt-5 prose">
+          When the world shut down during the pandemic, us musicians were left
+          adrift – thirsty for connection and any chance to play again. As
+          restrictions lifted, we took over a small bar in town, and to our
+          surprise, it quickly became a buzzing hangout spot for live music
+          lovers. But we needed something bigger – a place with no early curfews
+          and the freedom to keep the music going late into the night. Two years
+          later, we found it: 4Tallet Bar. The name stuck – so we added Live at
+          the end. And on May 17th, 2024, we opened our doors to the public.
+          Since then, we’ve shared unforgettable nights, welcomed hundreds of
+          new friends, and created a space we’re incredibly proud of.
+        </p>
+      </div>
+      <div class="flex justify-center">
+        <img
+          class="rounded-2xl border-double border-2 border-fuchsia-600"
+          src="/galleri/saxGuy.webp"
+          alt="guy playing saxophone"
+        />
+      </div>
+    </div>
+  </section>
+
+  <section id="section3" class="py-20 bg-zinc-950 px-4 md:px-0 rounded-xl">
+    <div
+      class="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-center fadein2"
+    >
+      <div class="flex justify-center">
+        <img
+          class="rounded-2xl border-double border-2 border-fuchsia-600"
+          src="/galleri/saxGuy.webp"
+          alt="guy playing saxophone"
+        />
+      </div>
+      <div>
+        <h2 class="text-4xl font-bold mb-4 text-center md:text-left">
+          The Vision For 4Tallet Live
+        </h2>
+        <p class="text-xl text-center md:text-left">
+          Lets play more music and have more fun!
+        </p>
+        <p class="mt-5 prose">
+          Lomography er blevet et kulturelt fænomen, hvor millioner af fans
+          verden over omfavner virksomhedens filosofi om eksperimentering,
+          spontanitet og kreativ frihed. Med sine unikke kameraer og filmtyper
+          har Lomography været med til at omdefinere vores syn på fotografi og
+          opfordrer os til at værdsætte uperfektheder og fejre skønheden i det
+          uventede. Efterhånden som virksomheden udvikler sig og udvider sit
+          produktsortiment, står det klart, at Lomographys ånd er kommet for at
+          blive – og fortsat vil inspirere nye generationer af fotografer til at
+          se verden med friske øjne og indfange den på deres egen unikke måde.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section id="section4" class="py-20 bg-zinc-950 px-4 md:px-0 rounded-xl">
+    <div class="container mx-auto text-center fadein3">
+      <h2 class="text-4xl font-bold mb-4">
+        Den Personlige lyst til at arbejde med Lomography
+      </h2>
+      <p class="text-xl">"Det simple" af Chris (@farleychris88)</p>
+    </div>
+    <div class="container mx-auto fadein4">
+      <p class="mt-5">
+        Omkring midten af 2020 så jeg en film kaldet Went to Coney Island on a
+        Mission from God... Be Back by Five, og der var en scene, hvor nogen
+        brugte et 110-kamera. Da jeg er i tyverne, havde jeg aldrig set et
+        110-kamera før. Så jeg googlede "tyndt vandret filmkamera", og det førte
+        mig til at købe et Kodak Ektralite 10. Derfra var jeg hooked på at
+        fotografere med 110-film og begyndte at forelske mig i det.
+      </p>
+      <p>
+        Jeg elsker filmens simple natur – jeg sætter den bare i og går i gang,
+        især fordi jeg udelukkende bruger et point-and-shoot-kamera. Filmen
+        giver altid et nostalgisk udseende, og selv efter at have skudt over 50
+        ruller bliver jeg stadig overrasket over resultaterne. Derudover hjælper
+        det, at filmen er relativt billig og overkommelig.
+      </p>
+      <p>
+        Jeg begyndte at fotografere med 110-film som en hobby og havde aldrig
+        forestillet mig, at det ville føre til så mange muligheder. Jeg har fået
+        lov til at tage promo-billeder for et band, et af mine fotos er blevet
+        brugt som albumcover, jeg har haft muligheden for at fotografere en
+        livekoncert professionelt, og vigtigst af alt har jeg fået fanget
+        fantastiske øjeblikke med mine venner og familie. Jeg håber, at
+        Lomography aldrig stopper med at producere 110-film, for jeg tror ikke,
+        jeg nogensinde vil stoppe med at fotografere med det.
+      </p>
+    </div>
+  </section>
+  <script>
+    import { inView } from "motion";
+
+    const fadein1 = document.querySelector(".fadein1");
+
+    inView(fadein1, () => {
+      fadein1.classList.add("animate__animated", "animate__fadeInUp");
+    });
+
+    const fadein2 = document.querySelector(".fadein2");
+
+    inView(fadein2, () => {
+      fadein2.classList.add("animate__animated", "animate__fadeInUp");
+    });
+
+    const fadein3 = document.querySelector(".fadein3");
+
+    inView(fadein3, () => {
+      fadein3.classList.add("animate__animated", "animate__fadeInUp");
+    });
+
+    const fadein4 = document.querySelector(".fadein4");
+
+    inView(fadein4, () => {
+      fadein4.classList.add("animate__animated", "animate__fadeInUp");
+    });
+
+    const fadein5 = document.querySelector(".fadein5");
+
+    inView(fadein5, () => {
+      fadein5.classList.add("animate__animated", "animate__flipInX");
+    });
+
+    const fadein6 = document.querySelector(".fadein6");
+
+    inView(fadein6, () => {
+      fadein6.classList.add("animate__animated", "animate__fadeIn");
+    });
+  </script>
+</MainLayout>

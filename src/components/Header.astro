@@ -4,23 +4,27 @@ import { Image } from "astro:assets";
 import MainLayout from "../layouts/MainLayout.astro";
 ---
 
-<div class="navbar bg-zinc-950 shadow-sm px-10 mb-15">
-  <div class="flex-1">
-    <a href="/"
-      ><Image class="w-full max-w-20 mt-3 mb-3" src={logo} alt="logo" /></a
-    >
+<div class="navbar bg-zinc-950 shadow-sm lg:px-10 mb-15">
+  <div class="flex-1 sm:flex sm:items-center">
+    <a href="/" class="sm:mr-4">
+      <img
+        class="w-full max-w-20 mt-3 mb-3 hidden sm:block"
+        src="/logo/4tallet_logo.webp"
+        alt="4tallet live logo"
+      />
+    </a>
   </div>
-  <div class="flex-none">
+  <div class="flex-none sm:flex sm:justify-center">
     <ul class="menu menu-horizontal px-1 font-display">
-      <li><a>EVENTS</a></li>
-      <li><a>FRONTPAGE</a></li>
-      <li><a href="galleri">GALLERY</a></li>
+      <li><a class="" href="/">FRONTPAGE</a></li>
+      <li><a class="" href="infoside">ABOUT US</a></li>
+      <li><a class="" href="galleri">GALLERY</a></li>
       <li>
         <details>
-          <summary>PARENTS</summary>
+          <summary>BOOKING</summary>
           <ul class="bg-zinc-950 rounded-t-none p-2">
-            <li><a>TBD</a></li>
-            <li><a>TBD</a></li>
+            <li><a href="booking_quiz">QUIZ TABEL</a></li>
+            <li><a href="booking_event">EVENT BOOKING</a></li>
           </ul>
         </details>
       </li>
