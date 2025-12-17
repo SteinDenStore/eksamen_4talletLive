@@ -23,6 +23,12 @@ pnpm-debug.log*
 # jetbrains setting folder
 .idea/
 
-# Ignore all image files
-.git/img/
-.git/public/img/
+# Ignore all images
+*.jpg
+*.jpeg
+*.png
+*.gif
+*.webp
+*.svg
+*.bmp
+*.tiff
